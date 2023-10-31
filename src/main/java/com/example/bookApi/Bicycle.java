@@ -1,15 +1,15 @@
-package com.example.restproject;
+package com.example.bookApi;
 
 public class Bicycle {
     public String name;
     public int speeds;
 
-    Bicycle(String name, int speeds) {
+    public Bicycle(String name, int speeds) {
         this.name = name;
         this.speeds = speeds;
     }
 
-    Bicycle() {
+    public Bicycle() {
 
     }
 }
