@@ -1,22 +1,21 @@
 package com.example.bookApi;
 
-import jakarta.servlet.RequestDispatcher;
 import jakarta.ws.rs.*;
 import jakarta.ws.rs.core.GenericEntity;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 
-import java.io.PrintWriter;
 import java.sql.*;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
-@Path("/books")
-public class HelloResource {
+@Path("/library")
+public class LibraryController {
+
+    @Path("/books")
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public Response bicycles() {
+    public Response books() {
 
         LinkedList<Book> bookList = new LinkedList<>();
         LinkedList<Author> authorList = new LinkedList<>();
