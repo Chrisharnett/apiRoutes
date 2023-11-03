@@ -7,10 +7,10 @@ import java.util.List;
  * studentnumber 20188141
  **/
 public class Book {
-    private String ISBN;
-    private String title;
-    private int edition;
-    private String copyright;
+    public String ISBN;
+    public String title;
+    public int edition;
+    public String copyright;
     private List<Author> authorList;
 
     /**
@@ -25,6 +25,10 @@ public class Book {
         this.title = title;
         this.edition = edition;
         this.copyright = copyright;
+    }
+
+    public Book() {
+
     }
 
     /**

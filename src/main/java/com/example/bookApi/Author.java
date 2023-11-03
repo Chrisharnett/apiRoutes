@@ -6,9 +6,9 @@ import java.util.List;
  * studentnumber 20188141
  **/
 public class Author {
-    private int id;
-    private String firstName;
-    private String lastName;
+    public int id;
+    public String firstName;
+    public String lastName;
     private List<Book> bookList;
 
     public Author(int id, String firstName, String lastName) {
@@ -17,8 +17,16 @@ public class Author {
         this.lastName = lastName;
     }
 
+    public Author() {
+
+    }
+
     public int getId() {
         return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getFirstName() {
